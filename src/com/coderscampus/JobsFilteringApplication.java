@@ -6,8 +6,8 @@ public class JobsFilteringApplication {
 	public static void main(String[] args) {
 
 		
-		JobService jobService = new JobService();
-		System.out.println(jobService.fileReader);
+		 JobService printJobs = new JobService();
+	      System.out.println(printJobs.fileReader);
 
 	}
 }
