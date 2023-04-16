@@ -9,10 +9,12 @@ import java.util.List;
 
 public class JobService {
 
-	private List<Jobs> jobsList = new ArrayList<>();
+	public void readJobsFromFile() {
+		
+		List<Jobs> jobsList = new ArrayList<>();
 
-	BufferedReader fileReader = null;
-	{
+		BufferedReader fileReader = null;
+
 		try {
 			fileReader = new BufferedReader(new FileReader("jobs.txt"));
 			String line;
@@ -45,7 +47,7 @@ public class JobService {
 				try {
 					fileReader.close();
 				} catch (IOException e) {
-					System.out.println("Error closing file");
+
 				}
 			}
 		}
