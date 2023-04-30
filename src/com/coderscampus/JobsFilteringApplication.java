@@ -6,6 +6,6 @@ public class JobsFilteringApplication {
 	public static void main(String[] args) {
 
 		 JobService printJobs = new JobService();
-		 printJobs.readJobsFromFile();
+		 printJobs.readJobsFromFile("jobs.txt");
 	}
 }

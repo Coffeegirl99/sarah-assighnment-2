@@ -9,14 +9,14 @@ import java.util.List;
 
 public class JobService {
 
-	public void readJobsFromFile() {
+	public void readJobsFromFile(String fileName) {
 		
 		List<Jobs> jobsList = new ArrayList<>();
 
 		BufferedReader fileReader = null;
 
 		try {
-			fileReader = new BufferedReader(new FileReader("jobs.txt"));
+			fileReader = new BufferedReader(new FileReader(fileName));
 			String line;
 
 			while ((line = fileReader.readLine()) != null) {
