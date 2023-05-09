@@ -26,7 +26,7 @@ public class JobService {
 				String compensation = jobsArray[2].replace("\"", "");
 
 				if (!compensation.equals("")) {
-					Jobs job = createJobs(title, company, compensation);
+					Jobs job = new Jobs(title, company, compensation);
 					jobsList.add(job);
 				}
 			}
@@ -51,13 +51,5 @@ public class JobService {
 				}
 			}
 		}
-	}
-
-	private Jobs createJobs(String title, String company, String compensation) {
-		Jobs jobs = new Jobs();
-		jobs.setTitle(title);
-		jobs.setCompany(company);
-		jobs.setCompensation(compensation);
-		return jobs;
 	}
 }

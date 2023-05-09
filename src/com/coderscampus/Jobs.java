@@ -6,6 +6,13 @@ public class Jobs {
 	private String company;
 	private String compensation;
 
+	public Jobs(String title, String company, String compensation) {
+		super();
+		this.title = title;
+		this.company = company;
+		this.compensation = compensation;
+	}
+
 	public String getTitle() {
 		return title;
 	}
